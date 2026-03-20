@@ -1,0 +1,12 @@
+{
+    "IPCP Pro 250 xi": {
+        "address": "192.168.254.250",
+        "type" : "LAN"
+        },
+
+    "TLP Pro 725M": {
+        "address": "192.168.254.251",
+        "type": "LAN"
+        }
+    
+}

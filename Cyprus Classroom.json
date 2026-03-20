@@ -1,0 +1,57 @@
+{
+    "system": {
+        "name": "Cyprus Typical Classroom",
+        "code_folder_path": "src",
+        "code_entry_file": "main.py",
+        "layout_folder_path": "layout",
+        "sound_folder_path": "sound",
+        "rfile_folder_path": "rfile",
+        "irfile_folder_path": "ir",
+        "data_file_path": "IPdata.json",
+        "system_id":"4321",
+        "author": {
+            "name": "Jon Ostlund",
+            "email": "Jostlund@gencomminc.com"
+        },
+        "version": "0.0.1",
+        "primary_device_alias": "Classroom Processor"
+    },
+    "devices": [
+        {
+            "name": "Classroom Processor",
+            "part_number": "60-1911-01",
+            "alias": "Classroom Processor",
+            "network": {
+                "host_network_type": "LAN",
+                "interfaces": [
+                    {
+                        "address": "/IPCP Pro 250 xi/address",
+                        "type": "LAN"
+                    }
+                ]
+            }
+        },{
+            "name": "Classroom Touchpanel",
+            "part_number": "60-1563-12",
+            "alias": "Classroom Touchpanel",
+            "extron_control_web_id": "bd1252be-f7df-42d8-b271-0872d9d7f81e",
+            "network": {
+                "host_network_type": "LAN",
+                "interfaces": [
+                    {
+                        "address": "/TLP Pro 725M/address",
+                        "type": "LAN"
+                    }
+                ]
+            },
+            "ui": {
+                "layout_file": "Cyprus Classroom Template_RevB.gdl",
+                "enable_click_sound": true,
+                "press_feedback": "none",
+                "thumb_change_report_interval": 0.1,
+                "thumb_to_fill_sync_time": 0.5
+            }
+        }
+    ],
+    "schemaVersion": "1.0.0"
+}
