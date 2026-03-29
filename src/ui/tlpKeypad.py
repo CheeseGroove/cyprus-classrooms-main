@@ -23,7 +23,7 @@ SettingsPasscodes = ['7167', '0428', '6461']
 
 btnKeypadEnter = Button(devTP, 9014)
 btnKeypadExit = Button(devTP, 9015)
-Keypad = KeypadLock.KeypadControl(devIPCP, devTP)
+Keypad = KeypadLock.KeypadControl(devIPCP, devTP, Label(devTP,913), PanelLockPasscodes)
 
 
 WhichKeypad = [1]
@@ -43,7 +43,7 @@ def btnKeypadEnterPressed(button:Button, state:str):
     if WhichKeypad[0] == 2:
         if Keypad.AcceptandClear() == True:
             @Wait(1)
-            def WaitClose():
+            def WaitClose2():
                 print('KP2 Accept')
                 devTP.HideAllPopups()
                 devTP.ShowPopup('Technician Popup')

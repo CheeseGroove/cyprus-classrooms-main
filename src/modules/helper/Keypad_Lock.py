@@ -32,13 +32,13 @@ from modules.helper.ModuleSupport import eventEx
     
     ## End Events Definitions-------------------------------------------------------
 class KeypadControl:
-    def __init__(self,dvProcessor, dvTLP):    
+    def __init__(self,dvProcessor, dvTLP, label, AcceptedPasscodes):    
         self.dvProcessor = dvProcessor
         self.dvTLP = dvTLP
         self.KeypadButton = []
-        self.KeypadLabel = Button(dvTLP, 9013)
+        self.KeypadLabel = label
         self.KeypadString = ''
-        self.AcceptedPasscodes = ['7167','6461']
+        self.AcceptedPasscodes = AcceptedPasscodes
         self.HidePin = True
             
         KeypadBackspace = Button(self.dvTLP, 9010, repeatTime = 0.3)
